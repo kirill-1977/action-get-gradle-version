@@ -1,13 +1,13 @@
-name: 'Get npm version action'
-description: 'Extracts the version string from the package.json file'
+name: 'Get gradle version action'
+description: 'Extracts the version string from the gradle.build file'
 inputs:
   file:
-    description: 'package.json file'
+    description: 'gradle.build file'
     required: false
-    default: 'package.json'
+    default: 'gradle.build'
 outputs:
   version:
-    description: 'The version string from the package.json file'
+    description: 'The version string from the gradle.build file'
 runs:
   using: 'node12'
   main: 'index.js'
