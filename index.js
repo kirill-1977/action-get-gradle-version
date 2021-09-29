@@ -4,6 +4,7 @@ const core = require('@actions/core');
 try {
   const file = core.getInput('file') || 'package.json';
   console.log(`Using ${file}`);
+  const bg = fs.readFileSync(file);
   
   //const version = JSON.parse(fs.readFileSync(file)).version;
   
