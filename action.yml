@@ -4,7 +4,7 @@ inputs:
   file:
     description: 'gradle.build file'
     required: false
-    default: 'gradle.build'
+    default: 'build.gradle'
 outputs:
   version:
     description: 'The version string from the gradle.build file'
