@@ -5,7 +5,7 @@ try {
   const file = core.getInput('file') || 'package.json';
   console.log(`Using ${file}`);
   const bg = fs.readFileSync(file);
-  
+  console.log(`content of bg: ${bg}`);
   //const version = JSON.parse(fs.readFileSync(file)).version;
   
   let version = 'latest';
