@@ -10,7 +10,7 @@ try {
   
   let version = 'latest';
 
-  bg.split('\n').forEach((r) => {
+  bg.split("\n").forEach((r) => {
     if (r.startsWith('version=') || r.startsWith('version =')) {
       version = r.replace(/(version|=|"| )/g, '');
     }
