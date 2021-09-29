@@ -11,9 +11,9 @@ This action extracts the version string from the build.gradle file.
 
 ## Outputs
 
-### `time`
+### `version`
 
-The time we greeted you.
+the version inside build.gradle file.
 
 ## Example usage
 
