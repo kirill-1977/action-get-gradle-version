@@ -1,12 +1,13 @@
-# Get npm version action
+# Get gradle version action 
+(a fork of get npm version action: https://github.com/pchynoweth/action-get-npm-version)
 
-This action extracts the version string from the package.json file.
+This action extracts the version string from the build.gradle file.
 
 ## Inputs
 
 ### `file`
 
-**Optional** The package.json file. Default `"package.json"`.
+**Optional** The build.gradle file. Default `"build.gradle"`.
 
 ## Outputs
 
@@ -17,5 +18,5 @@ The time we greeted you.
 ## Example usage
 
 ```yaml
-uses: action-get-npm-version@master
+uses: action-get-gradle-version@master
 ```
