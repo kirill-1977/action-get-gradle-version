@@ -1,22 +1,19 @@
 {
-  "name": "hello-world-javascript-action",
+  "name": "action-get-gradle-version",
   "version": "1.0.0",
-  "description": "This action prints \"Hello World\" or \"Hello\" + the name of a person to greet to the log.",
+  "description": "reads the version inside build.gradle file",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/hello-world-javascript-action.git"
+    "url": "git+https://github.com/thecodemonkey/action-get-gradle-version.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["gradle", "version"],
+  "author": "TheCodemonkey",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/actions/hello-world-javascript-action/issues"
-  },
-  "homepage": "https://github.com/actions/hello-world-javascript-action#readme",
+  "homepage": "https://github.com/thecodemonkey/action-get-gradle-version/",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^1.1.0"
