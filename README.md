@@ -44,9 +44,11 @@ jobs:
 
 **Optional** The build.gradle file. Default `"build.gradle"`.
 
-```
+use this input parameter if the build.gradle file is in a different directory.
 
-    uses: thecodemonkey/action-get-gradle-version@master
+```yaml
+
+  - uses: thecodemonkey/action-get-gradle-version@master
     with:
       file: module/subfolder/build.gradle
 
@@ -57,4 +59,12 @@ jobs:
 
 ### `version`
 
-the version inside build.gradle file.
+the version inside build.gradle file. You have to give the step an id to access the output.
+
+```yaml
+
+  - uses: thecodemonkey/action-get-gradle-version@master
+    id: getversion
+  - run: 'echo version ${{ steps.getversion.outputs.version }}' 
+
+```
