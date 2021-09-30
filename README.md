@@ -1,9 +1,14 @@
 # Get gradle version action 
-(a fork of get npm version action: https://github.com/pchynoweth/action-get-npm-version)
+*(a fork of get npm version action: https://github.com/pchynoweth/action-get-npm-version)*
 
-This action extracts the version string from the build.gradle file.
+<br/><br/>
 
-## Example usage
+extracts the version string from the build.gradle file
+
+
+<br/><br/>
+
+# Example usage
 
 ```yaml
 
@@ -38,6 +43,8 @@ jobs:
       
 ```
 
+<br/><br/>
+
 ## Inputs
 
 ### `file`
@@ -54,6 +61,7 @@ use this input parameter if the build.gradle file is in a different directory.
 
 ```
 
+<br/><br/>
 
 ## Outputs
 
@@ -68,3 +76,9 @@ the version inside build.gradle file. You have to give the step an id to access 
   - run: 'echo version ${{ steps.getversion.outputs.version }}' 
 
 ```
+
+<br/><br/>
+
+# License
+
+The scripts and documentation in this project are released under the MIT License
