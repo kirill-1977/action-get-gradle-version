@@ -2,7 +2,7 @@ const fs = require('fs');
 const core = require('@actions/core');
 
 try {
-  const file = core.getInput('file') || 'package.json';
+  const file = core.getInput('file') || 'build.gradle';
   console.log(`Using ${file}`);
   const bg = fs.readFileSync(file) + "";
   
