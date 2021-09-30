@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - run: 'echo version ${{needs.build.outputs.version}}'       # <- access the version in another job
+      - run: 'echo version ${{needs.build.outputs.version}}'     # <- access the version in another job
       
 ```
 
