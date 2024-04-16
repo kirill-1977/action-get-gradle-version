@@ -15,7 +15,7 @@ try {
   });
   
   console.log(version);
-  core.setOutput("version", version);
+  core.setOutput("version", version.replaceAll("'", ""));
 } catch (error) {
   core.setFailed(error.message);
 }
